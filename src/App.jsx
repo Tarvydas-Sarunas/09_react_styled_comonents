@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import './styles/App.css';
 import GlobalStil from './styles/GlogalStil';
+import TourSection from './components/TourSection';
 
 const MainTitle = styled.h1`
   text-transform: uppercase;
@@ -39,10 +40,11 @@ export default function App() {
       <GlobalStil />
       <MainTitle>Hello, world!</MainTitle>
       <hr />
-      <MyButton>Click Me</MyButton>
-      <MyButton $outline>Outline btn</MyButton>
-      <RedBtn $outline>Tomato btn</RedBtn>
-      <RedBtn as={'a'} href='#kazkur'>I am link btn</RedBtn>
+      <TourSection />
+      {/* <MyButton>Click Me</MyButton> */}
+      {/* <MyButton $outline>Outline btn</MyButton> */}
+      {/* <RedBtn $outline>Tomato btn</RedBtn> */}
+      {/* <RedBtn as={'a'} href='#kazkur'>I am link btn</RedBtn> */}
     </div>
   );
 }
